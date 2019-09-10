@@ -1,0 +1,266 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Flexbob work">
+    <meta name="keywords" content="HTML,CSS">
+    <meta name="author" content="Ranjan">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+.container{
+  background-color: teal;
+  border: 3px solid black;
+  display: flex;
+  flex-direction: row;
+}
+.container div{
+  padding: 5px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  align-items: flex-start;
+}
+.container div:nth-child(1){
+  background-color: red;
+  flex-grow: 1;
+}
+.container div:nth-child(2){
+  background-color: blue;
+  flex-grow: 1;
+}
+.container div:nth-child(3){
+  background-color: pink;
+  flex-grow: 1;
+}
+.container div:nth-child(4){
+  background-color: orange;
+  flex-grow: 1;
+}
+.container div:hover{
+  background-color: white;
+  color: black;
+}
+
+
+
+
+
+.ulli{
+  background-color: teal;
+  border: 3px solid black;
+}
+.ulli ul{
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+}
+.ulli ul li a{
+  padding: 5px;
+}
+.ulli ul li a{
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 16px;
+  color: white;
+}
+.ulli ul li input{
+  background-color: transparent;
+  border: none;
+  width: 50px;
+}
+.ulli ul .search{
+  border-bottom: 1px solid white;
+}
+.search{
+  flex: 1;
+}
+.ulli ul input::placeholder{
+  color: white;
+  font-weight: bold;
+}
+
+
+
+
+
+.container_boxes{
+  background-color: cyan;
+  border: 3px solid black;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.container_boxes .boxes{
+  padding: 5px;
+  width: 200px;
+  flex-grow: 1;
+  text-align: center;
+}
+.container_boxes div:nth-child(odd){
+  background-color: silver;
+}
+.container_boxes div:nth-child(even){
+  background-color: tomato;
+}
+
+
+
+
+
+.double_container{
+  background-color: teal;
+}
+nav ul{
+  list-style-type: none;
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+}
+nav ul li{
+  flex-grow: 1;
+}
+nav ul li:hover{
+  background-color: black;
+  color: white;
+}
+nav ul li a{
+  display: block;
+  text-decoration: none;
+  font-size: 18px;
+  text-align: center;
+  color: white;
+  padding: 5px;
+}
+
+
+
+
+
+.social_part a{
+  text-indent: -10000px;
+}
+.social_part{
+  flex: 1 1 0;
+  max-width: 80px;
+}
+.social_part .fb{
+  background-image: url("https://res.cloudinary.com/webcraze-jan/image/upload/v1568046874/697029-twitter-512.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+.social_part .tw{
+  background-image: url("https://res.cloudinary.com/webcraze-jan/image/upload/v1568046874/f75d94874d855a7fcfcc922d89ac5e80.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+
+
+
+.image_grid{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.image_grid > div > img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.image_grid > .small{
+  flex: 1 1 350px;
+}
+.image_grid > .big{
+  flex: 1 1 150px;
+}
+    </style>
+    
+    
+  </head>
+  <body>
+    <main>
+      <article>
+        <section class="container">
+          <div class="box box1">Home</div>
+          <div class="box box2">About</div>
+          <div class="box box3">search</div>
+          <div class="box box4">Product</div>
+        </section>
+        
+        <br>
+        <br>
+        <br>
+        
+        <section class="ulli">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li class="search"><a href="#">
+              <input type="text" placeholder="Search"/>
+              </a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Email</a></li>
+          </ul>
+        </section>
+        
+        <br>
+        <br>
+        <br>
+        
+        <section class="container_boxes">
+          <div class="boxes boxes1">Home</div>
+          <div class="boxes boxes2">Product</div>
+          <div class="boxes boxes3">Mail Us</div>
+          <div class="boxes boxes3">Contact</div>
+        </section>
+        
+        <br>
+        <br>
+        <br>
+        
+         <section class="double_container">
+          <nav>
+            <ul>
+               <li class="soci"><a href="#">Home</a></li> 
+               <li class="soci"><a href="#">Contact</a></li> 
+               <li class="soci"><a href="#">Product</a></li> 
+               <li class="soci"><a href="#">Client</a></li> 
+            </ul>
+            <ul class="social_part">
+              <li class="fb"><a href="#">Fb</a></li> 
+              <li class="tw"><a href="#">Tw</a></li> 
+            </ul>
+          </nav>
+        </section>
+        
+        <br>
+        <br>
+        <br>
+        
+        <section class="image_grid">
+          <div class="big"><img src="https://res.cloudinary.com/webcraze-jan/image/upload/v1566297373/elon-musk-spacex-rocket-vector-graphic-clip-art-silhouette.png" name="o"/></div>
+          <div class="small"><img src="https://res.cloudinary.com/webcraze-jan/image/upload/v1566297373/images.jpg" name="n"/></div>
+          <div class="big"><img src="https://res.cloudinary.com/webcraze-jan/image/upload/v1535689423/beverage-coffee-computer-877695.jpg" name="m"/></div>
+          <div class="small"><img src="https://res.cloudinary.com/webcraze-jan/image/upload/v1533882646/black-and-white-computer-device-163017.jpg" name="l"/></div>
+          <div class="big"><img src="https://res.cloudinary.com/webcraze-jan/image/upload/v1533614673/bandwidth-close-up-computer-1148820.jpg" name="k"/></div>
+          <div class="small"><img src="https://res.cloudinary.com/webcraze-jan/image/upload/v1533882613/adult-brunette-caucasian-920381.jpg" name="j"/></div>
+          <div class="big"><imgsrc="https://res.cloudinary.com/webcraze-jan/image/upload/v1533614654/computer-cpu-data-8943.jpg" name="i"/></div>
+          <div class="small"><img src="https://res.cloudinary.com/webcraze-jan/image/upload/v1533614643/business-close-up-conceptual-987586.jpg" name="h"/></div>
+          <div class="big"><img src="https://res.cloudinary.com/webcraze-jan/image/upload/v1533612347/ball-brand-branding-934974.jpg" name="g"/></div>
+          <div class="small"><img src="https://res.cloudinary.com/webcraze-jan/image/upload/v1533611414/adult-blur-bokeh-712786.jpg" name="f"/></div>
+          <div class="big"><img src="https://res.cloudinary.com/webcraze-jan/image/upload/v1533611392/achievement-agreement-arms-1068523.jpg" name="e"/></div>
+          <div class="small"><img src="https://res.cloudinary.com/webcraze-jan/image/upload/v1533094619/blackboard-business-chalkboard-355988.jpg" name="d"/></div>
+          <div class="big"><img src="https://res.cloudinary.com/webcraze-jan/image/upload/v1530936023/sample.jpg" name="c"/></div>
+          <div class="small"><img src="https://res.cloudinary.com/webcraze-jan/image/upload/v1536453180/login.png" name="b"/></div>
+          <div class="big"><img src="https://res.cloudinary.com/webcraze-jan/image/upload/v1533612347/ball-brand-branding-934974.jpg" name="g"/></div>
+          <div class="small"><img src="https://res.cloudinary.com/webcraze-jan/image/upload/v1566316937/pexels-photo-65704.jpg" name="a"/></div>
+        </section>
+      </article>
+    </main>
+  </body>
+</html>
